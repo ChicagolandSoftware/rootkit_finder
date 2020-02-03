@@ -30,7 +30,7 @@ echo "history containing /etc/shadow:"
 history | grep /etc/shadow
 divider
 divider
-echo "history containing bash (sometimes used for bind shells/reverse shells):"
+echo "history containing bash (sometimes used for reverse shells):"
 history | grep bash
 divider
 echo "history containing /dev/tcp/ (sometimes used for reverse shells):"
@@ -39,14 +39,17 @@ divider
 echo "history containing unset HISTFILE:"
 history | grep 'unset HISTFILE'
 divider
-echo "history containing nc:"
+echo "history containing nc (used for bind shells or listeners):"
 history | grep nc
 divider
 echo "history containing netcat:"
 history | grep netcat
 divider
-echo "history containing dnscat:"
+echo "history containing dnscat (used for data exfiltration):"
 history | grep dnscat
+divider
+echo "history containing mysql (such as connection attempts):"
+history | grep mysql
 divider
 echo "history containing wget:"
 history | grep wget
