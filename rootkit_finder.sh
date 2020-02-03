@@ -5,12 +5,10 @@ divider() {
 }
 
 #to-do: use tee to log to a file
-#call it 
 #to-do: check history of non-root users
-#to-do:
-#https://www.computerhope.com/unix/uat.htm
+#to-do: https://www.computerhope.com/unix/uat.htm
 #to-do: fg and bg tasks
-
+#for more to-dos, see the end of the script
 
 echo -n "checking for rootkits on "
 date
